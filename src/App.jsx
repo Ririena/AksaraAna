@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import LoginPages from "./pages/LoginPages.jsx"
+import Materi from "./pages/Materi"
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/login" element={<LoginPages />}></Route>
+            <Route exact path="/materi" element={<Materi/>}></Route>
           </Routes>
         </Router>
       </div>
