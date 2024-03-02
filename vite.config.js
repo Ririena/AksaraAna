@@ -8,6 +8,10 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      devOptions: {
+        enabled: true
+        /* other options */
+      },
       manifest: {
         name: 'Aksara Sunda',
         short_name: 'MyApp',
@@ -30,6 +34,7 @@ export default defineConfig({
         display: "standalone",
         scope: "/",
         start_url:"/",
+        
       }
     })
   ],
